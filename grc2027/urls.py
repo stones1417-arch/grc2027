@@ -4,13 +4,13 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
+    # ✅ الصفحة الرئيسية
+    path('', include('core.urls')),
+
     # لوحة الإدارة
     path('admin/', admin.site.urls),
 
-    # =========================
     # تطبيقات منصة GRC
-    # =========================
-    path('core/', include('core.urls')),
     path('governance/', include('governance.urls')),
     path('assurance/', include('assurance.urls')),
 ]

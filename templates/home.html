@@ -1,0 +1,398 @@
+<!-- templates/home.html -->
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>الحرمين | الحوكمة والامتثال والمخاطر</title>
+</head>
+
+<body class="hrm-body" id="home">
+  {% include "header.html" %}
+
+  <main class="hrm-main">
+    <!-- Hero -->
+    <section class="hrm-hero">
+      <div class="hrm-hero__bg"></div>
+      <div class="hrm-hero__inner">
+        <div class="hrm-hero__badge">منصة GRC — الحرمين</div>
+        <h1 class="hrm-hero__title">حوكمة وامتثال ومخاطر<br/>بمنظور مؤسسي موحّد</h1>
+        <p class="hrm-hero__lead">
+          إدارة السياسات والإجراءات، الالتزامات التنظيمية، سجل المخاطر، وخطط المعالجة، مع مؤشرات أداء وتقارير تنفيذية.
+        </p>
+
+        <div class="hrm-hero__actions">
+          <a class="hrm-cta hrm-cta--gold" href="#modules">استعراض الوحدات</a>
+          <a class="hrm-cta hrm-cta--ghost" href="/admin/">الدخول للوحة التحكم</a>
+        </div>
+
+        <div class="hrm-stats">
+          <div class="hrm-stat">
+            <div class="hrm-stat__num" data-count="12">0</div>
+            <div class="hrm-stat__lbl">سياسات رئيسية</div>
+          </div>
+          <div class="hrm-stat">
+            <div class="hrm-stat__num" data-count="34">0</div>
+            <div class="hrm-stat__lbl">ضوابط رقابية</div>
+          </div>
+          <div class="hrm-stat">
+            <div class="hrm-stat__num" data-count="8">0</div>
+            <div class="hrm-stat__lbl">تقارير تنفيذية</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modules -->
+    <section class="hrm-section" id="modules">
+      <div class="hrm-section__head">
+        <h2>الوحدات الأساسية</h2>
+        <p>تصميم يركز على الامتثال والحوكمة وإدارة المخاطر والقياس.</p>
+      </div>
+
+      <div class="hrm-grid">
+        <article class="hrm-card" id="governance">
+          <div class="hrm-card__icon">🏛️</div>
+          <h3>الحوكمة</h3>
+          <p>هياكل الحوكمة، السياسات، اللجان، الصلاحيات، ومسارات الاعتماد.</p>
+          <a class="hrm-link" href="/admin/">فتح الوحدة</a>
+        </article>
+
+        <article class="hrm-card" id="compliance">
+          <div class="hrm-card__icon">✅</div>
+          <h3>الامتثال</h3>
+          <p>متطلبات ولوائح، التزامات، أدلة امتثال، ومتابعة تنفيذ المعالجات.</p>
+          <a class="hrm-link" href="/admin/">فتح الوحدة</a>
+        </article>
+
+        <article class="hrm-card" id="risk">
+          <div class="hrm-card__icon">⚠️</div>
+          <h3>المخاطر</h3>
+          <p>سجل مخاطر، تقييم الاحتمالية/الأثر، مصفوفة مخاطر وخطط التخفيف.</p>
+          <a class="hrm-link" href="/admin/">فتح الوحدة</a>
+        </article>
+
+        <article class="hrm-card" id="kpi">
+          <div class="hrm-card__icon">📊</div>
+          <h3>مؤشرات الأداء</h3>
+          <p>لوحات قياس، مؤشرات التزام، فعالية الضوابط، ونتائج التدقيق.</p>
+          <a class="hrm-link" href="/admin/">فتح الوحدة</a>
+        </article>
+
+        <article class="hrm-card" id="reports">
+          <div class="hrm-card__icon">🧾</div>
+          <h3>التقارير</h3>
+          <p>تقارير شهرية/ربع سنوية، ملخصات تنفيذية، وتصدير PDF.</p>
+          <a class="hrm-link" href="/admin/">فتح الوحدة</a>
+        </article>
+
+        <article class="hrm-card">
+          <div class="hrm-card__icon">🔒</div>
+          <h3>إدارة الوصول</h3>
+          <p>أدوار وصلاحيات، مسارات موافقة، وتتبّع نشاطات المستخدمين.</p>
+          <a class="hrm-link" href="/admin/">فتح الوحدة</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Callout -->
+    <section class="hrm-callout">
+      <div class="hrm-callout__inner">
+        <div class="hrm-callout__text">
+          <h2>جاهز للبدء؟</h2>
+          <p>ابدأ بتعريف السياسات والضوابط وربطها بالمخاطر والمتطلبات ثم أنشئ تقريرًا تنفيذيًا.</p>
+        </div>
+        <div class="hrm-callout__actions">
+          <a class="hrm-cta hrm-cta--gold" href="/admin/">إنشاء أول سياسة</a>
+          <a class="hrm-cta hrm-cta--ghost" href="#footer">الدعم والمعلومات</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  {% include "footer.html" %}
+
+  <style>
+    /* Base */
+    html,body{ height:100%; }
+    body.hrm-body{
+      margin:0;
+      font-family: system-ui, -apple-system, "Segoe UI", Tahoma, Arial, sans-serif;
+      background: radial-gradient(1200px 700px at 80% -10%, rgba(214,178,94,.14), transparent 55%),
+                  radial-gradient(900px 600px at 10% 10%, rgba(214,178,94,.08), transparent 55%),
+                  var(--bg);
+      color: var(--text);
+    }
+    .hrm-main{
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 16px 40px;
+    }
+
+    /* Hero */
+    .hrm-hero{
+      position: relative;
+      border: 1px solid rgba(214,178,94,.16);
+      border-radius: 26px;
+      margin-top: 18px;
+      overflow:hidden;
+      background: linear-gradient(180deg, rgba(20,20,24,.75), rgba(10,10,12,.92));
+      box-shadow: 0 20px 80px rgba(0,0,0,.55);
+    }
+    .hrm-hero__bg{
+      position:absolute;
+      inset:-80px;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(214,178,94,.22) 0%, transparent 55%),
+        radial-gradient(circle at 80% 20%, rgba(214,178,94,.12) 0%, transparent 60%),
+        linear-gradient(45deg, rgba(214,178,94,.06), transparent 40%);
+      filter: blur(2px);
+      pointer-events:none;
+    }
+    .hrm-hero__inner{
+      position:relative;
+      padding: 34px 22px 22px;
+    }
+    .hrm-hero__badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(214,178,94,.22);
+      background: rgba(255,255,255,.03);
+      color: rgba(244,244,245,.95);
+      font-size: 13px;
+      width: fit-content;
+    }
+    .hrm-hero__title{
+      margin: 14px 0 10px;
+      font-size: clamp(26px, 4vw, 44px);
+      line-height: 1.15;
+      letter-spacing: .2px;
+    }
+    .hrm-hero__lead{
+      margin: 0 0 18px;
+      max-width: 760px;
+      color: rgba(185,185,192,.92);
+      line-height: 1.9;
+      font-size: 15px;
+    }
+    .hrm-hero__actions{
+      display:flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+    .hrm-cta{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding: 12px 14px;
+      border-radius: 16px;
+      border: 1px solid rgba(214,178,94,.18);
+      text-decoration:none;
+      transition:.2s ease;
+      color: var(--text);
+      background: rgba(255,255,255,.03);
+      font-weight: 600;
+      font-size: 13.5px;
+    }
+    .hrm-cta--gold{
+      background: linear-gradient(180deg, rgba(214,178,94,.95), rgba(185,144,47,.95));
+      color:#111;
+      border-color: rgba(214,178,94,.42);
+    }
+    .hrm-cta--gold:hover{ transform: translateY(-1px); }
+    .hrm-cta--ghost:hover{
+      background: rgba(214,178,94,.06);
+      border-color: rgba(214,178,94,.32);
+    }
+
+    .hrm-stats{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .hrm-stat{
+      padding: 14px 14px;
+      border-radius: 18px;
+      border: 1px solid rgba(214,178,94,.14);
+      background: rgba(255,255,255,.02);
+    }
+    .hrm-stat__num{
+      font-size: 24px;
+      font-weight: 900;
+      color: rgba(214,178,94,.95);
+      letter-spacing: .4px;
+    }
+    .hrm-stat__lbl{
+      margin-top: 6px;
+      color: rgba(185,185,192,.9);
+      font-size: 13px;
+    }
+
+    /* Section */
+    .hrm-section{
+      margin-top: 22px;
+    }
+    .hrm-section__head{
+      padding: 10px 6px 14px;
+      display:flex;
+      align-items:flex-end;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .hrm-section__head h2{
+      margin:0;
+      font-size: 20px;
+      letter-spacing: .2px;
+    }
+    .hrm-section__head p{
+      margin:0;
+      color: rgba(185,185,192,.9);
+      font-size: 13.5px;
+      line-height: 1.7;
+      max-width: 520px;
+    }
+
+    .hrm-grid{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    .hrm-card{
+      padding: 18px 16px;
+      border-radius: 22px;
+      border: 1px solid rgba(214,178,94,.14);
+      background: linear-gradient(180deg, rgba(20,20,24,.75), rgba(12,12,14,.92));
+      box-shadow: 0 14px 40px rgba(0,0,0,.35);
+      transition: .2s ease;
+      min-height: 150px;
+    }
+    .hrm-card:hover{
+      transform: translateY(-2px);
+      border-color: rgba(214,178,94,.26);
+      background: linear-gradient(180deg, rgba(24,24,28,.82), rgba(12,12,14,.92));
+    }
+    .hrm-card__icon{
+      width: 44px; height: 44px;
+      border-radius: 16px;
+      display:grid;
+      place-items:center;
+      background: rgba(214,178,94,.10);
+      border: 1px solid rgba(214,178,94,.18);
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    .hrm-card h3{
+      margin: 0 0 6px;
+      font-size: 16px;
+    }
+    .hrm-card p{
+      margin: 0 0 12px;
+      color: rgba(185,185,192,.92);
+      line-height: 1.85;
+      font-size: 13.5px;
+    }
+    .hrm-link{
+      display:inline-flex;
+      align-items:center;
+      gap: 8px;
+      color: rgba(214,178,94,.95);
+      text-decoration:none;
+      font-weight: 700;
+      font-size: 13px;
+      padding: 8px 10px;
+      border-radius: 14px;
+      border: 1px solid rgba(214,178,94,.18);
+      background: rgba(214,178,94,.06);
+      width: fit-content;
+      transition:.2s ease;
+    }
+    .hrm-link:hover{
+      border-color: rgba(214,178,94,.32);
+      background: rgba(214,178,94,.10);
+    }
+
+    /* Callout */
+    .hrm-callout{
+      margin-top: 18px;
+      border-radius: 26px;
+      border: 1px solid rgba(214,178,94,.16);
+      background: radial-gradient(circle at 20% 20%, rgba(214,178,94,.16) 0%, transparent 55%),
+                  linear-gradient(180deg, rgba(18,18,22,.85), rgba(10,10,12,.95));
+      overflow:hidden;
+    }
+    .hrm-callout__inner{
+      padding: 20px 18px;
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .hrm-callout__text h2{
+      margin:0 0 6px;
+      font-size: 18px;
+    }
+    .hrm-callout__text p{
+      margin:0;
+      color: rgba(185,185,192,.92);
+      line-height: 1.85;
+      font-size: 13.5px;
+      max-width: 620px;
+    }
+    .hrm-callout__actions{
+      display:flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    /* Responsive */
+    @media (max-width: 980px){
+      .hrm-stats{ grid-template-columns: 1fr; }
+      .hrm-grid{ grid-template-columns: 1fr; }
+      .hrm-hero__inner{ padding: 26px 16px 18px; }
+    }
+  </style>
+
+  <script>
+    (function(){
+      // Animated counters
+      const els = document.querySelectorAll('[data-count]');
+      const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      function animateCount(el){
+        const target = parseInt(el.getAttribute('data-count') || '0', 10);
+        if(Number.isNaN(target)) return;
+        if(prefersReduced){ el.textContent = String(target); return; }
+
+        const duration = 900;
+        const start = performance.now();
+        function tick(now){
+          const t = Math.min(1, (now - start) / duration);
+          const val = Math.floor(target * (0.2 + 0.8 * t));
+          el.textContent = String(val);
+          if(t < 1) requestAnimationFrame(tick);
+          else el.textContent = String(target);
+        }
+        requestAnimationFrame(tick);
+      }
+
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if(e.isIntersecting){
+            animateCount(e.target);
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.4 });
+
+      els.forEach(el => io.observe(el));
+    })();
+  </script>
+</body>
+</html>

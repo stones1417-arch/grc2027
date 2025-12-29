@@ -2,4 +2,6 @@ from django.apps import AppConfig
 
 
 class AssuranceConfig(AppConfig):
-    name = 'assurance'
+    default_auto_field = "django.db.models.BigAutoField"
+    name = "assurance"
+    verbose_name = "التأكيد"
